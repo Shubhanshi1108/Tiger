@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+
+.nav-list{
+    width: 75%;
+    list-style: none;
+    display: flex;
+    color:white;
+}
+.logo{
+   width:23%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}   
+.logo img{
+    width:35%;
+    border:2px solid white;
+    border-radius: 50px;
+    margin:3px
+
+}
+.nav-list li{
+    padding: 18px 28px;
+    align-items: center;
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+}   
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover{
+    color:goldenrod;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: sticky;
+    top: 0px;
+    background:rgba(0, 0, 0, 0.877);
+}
+.rightnav{
+    width: 30%;
+    text-align: right;
+    padding: 0px 23px;
+  
+}
+#search{
+    font-size: 20px;
+    margin-top: 14px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+    
+.background{
+    background: rgba(0, 0, 0, 0.897) url('img/bg3.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.main-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 60%;
+    margin: auto;
+    height: 80%;
+}
+.first-half{ 
+    width:80%
+}
+.second-half{
+    width: 30%;
+}
+.second-half img{
+    display: block;
+    margin: auto;
+    padding: 5px;
+    width: 90%;
+    border: 2px solid rgb(211, 71, 71);
+    border-radius: 500px;
+}
+.first-section{
+    height: 90vh;
+    
+}
+.bigText{
+    font-size: 38px;
+    color:white;
+}
+.smallText{
+    font-size: 17px;
+    padding: 5px 6px;
+    color: goldenrod;
+}
+.btn{
+    padding: 8px 15px;
+    border: 2px solid rgb(211, 71, 71);
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.493);
+    color: white;
+    margin: 7px 2px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.btn-big:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid white;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.btn-sm:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.section{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 24px 5px;
+}
+#left{
+    flex-direction: row-reverse;
+}
+.heading{
+    color:white;
+    font-size: 27px;
+    font-weight: bolder;
+    text-decoration:underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content{
+    font-size: 16px;
+    margin: 6px 0px;
+    color:goldenrod;
+}
+.more{
+    color:rgb(211, 71, 71);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+.sectionImg img{
+    width:200px;
+    margin: 15px ;
+    border:2px solid rgb(211, 71, 71);
+    border-radius: 10px;
+}
+.more:hover{
+    color:red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+hr{
+    background-color:gold;
+    width:70%;
+    height:1px;
+    margin: auto;
+   
+}
+h4{
+    color:white;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;    
+}
+.form{
+    max-width: 65%;
+    margin:40px auto;
+   
+}
+.form-input{
+    font-size: 18px;
+    padding: 8px 5px;
+    margin: 17px auto;
+    width: 100%;
+    border: 2px solid rgb(211, 71, 71);
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.493);
+    color:white;
+}
+.form button{
+    border:2px solid goldenrod;
+    font-size: 18px;
+    color:white;
+    background: rgba(0, 0, 0, 0.493);
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.footer-Text{
+    color:white;
+    padding: 13px;
+    background: rgba(0, 0, 0, 0.493);
+    text-align: center;
+    font-size: 15px;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    top:15px;
+    right:5%;
+    display: none;
+}
+.line{
+    width:30px;
+    background-color: white;
+    height: 4px;
+    margin:5px 3px;
+}
+.bigText{
+    text-align: center;
+}
+.smallText{
+    text-align:center;
+}
+.buttons{
+    
+    padding: 10px;
+
+}
+ 
+@media only screen and (max-width:1258px){
+    .nav-list{
+        flex-direction: column;
+        text-align: center;  
+    }
+    .back{
+        background-image: url('img/bg4.jpg');
+        background-size: cover;
+           
+    }
+    .nav-list li a{
+        font-weight: bolder;
+    }
+    .nav-list li a:hover{
+        color:gold;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+    .rightnav button{
+        background-color: black;
+    }   
+    .logo{
+        margin: auto;
+    }
+    .rightnav{ 
+        text-align: center;
+    }
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition:all 1s ease-out;
+        height:450px;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .nav-h{
+        height:58px;
+    }
+    .main-box{
+        flex-direction: column-reverse;
+    }
+    .first-section{
+        height: 127vh;
+    }
+    .first-half{
+        width: 140%;
+    }
+    .buttons{
+        text-align: center;
+    }
+    
+}    
+@media only screen and (max-width:700px){
+    .section{
+        flex-direction: column-reverse;
+    }
+    #left{
+        flex-direction: column-reverse;
+    }
+    .form{
+        max-width: 70%;
+    }
+    .heading{
+        text-align: center;
+    }
+    .content{
+        text-align: center;
+    }
+    .sectionImg{
+        margin:20px auto;
+    }
+    .more{
+        text-align: center;
+    }
+    .section{
+        padding: 0px;
+    }
+    .footer-Text{
+        font-size: 10px;
+    }
+}
